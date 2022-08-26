@@ -18,7 +18,7 @@ export const Users = (props) => {
         <div className="usersGrid">
             {users.map((element) => {
                   return(
-                    <UserCard key={element.id} name={element.name} email={element.email} id={element.id} />
+                    <UserCard user={element} />
                   )
             })}
         </div>
